@@ -32,3 +32,18 @@ User can submit claims and track it progress.
 
 If a claim meet certain criteria, it can be auto-approved. This is accomplished by running the claim through rules engine (json-rules-engine).
 
+
+
+
+
+
+
+![name-of-you-image]()
+
+
+![name-of-you-image](https://github.com/chauhan-shobhit/claimsApp/blob/main/Screens/HomePage.jpg?raw=true)
+
+![name-of-you-image](https://github.com/chauhan-shobhit/claimsApp/blob/main/Screens/Login.jpg?raw=true)
+
+![name-of-you-image](https://github.com/chauhan-shobhit/claimsApp/blob/main/Screens/SignUp.jpg?raw=true)
+
