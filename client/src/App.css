@@ -1,0 +1,26 @@
+nav {
+  background-color: rgb(153, 149, 149);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10;
+  text-align: center;
+  height: 50px;
+}
+
+footer {
+  background-color: rgb(153, 149, 149);
+  margin: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  height: 50px;
+}
+
+.center {
+  background: url("./img/image.jpg") no-repeat;
+}
