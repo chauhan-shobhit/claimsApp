@@ -34,19 +34,41 @@ If a claim meet certain criteria, it can be auto-approved. This is accomplished 
 
 
 
+Swagger url : {Base URL}/api-docs/ (http://localhost:1221/api-docs/)
 
-
-
+APIs:
+Claim APIs
 ![name-of-you-image](https://github.com/chauhan-shobhit/claimsApp/blob/main/Screens/s1.png?raw=true)
 ![name-of-you-image](https://github.com/chauhan-shobhit/claimsApp/blob/main/Screens/s2.png?raw=true)
+
+Policy APIs
 ![name-of-you-image](https://github.com/chauhan-shobhit/claimsApp/blob/main/Screens/s3.jpg?raw=true)
 
+User APIs
 ![name-of-you-image](https://github.com/chauhan-shobhit/claimsApp/blob/main/Screens/s4.jpg?raw=true)
 
 
+Home Page 
+
 ![name-of-you-image](https://github.com/chauhan-shobhit/claimsApp/blob/main/Screens/HomePage.jpg?raw=true)
+
+Registration Page 
+
+![name-of-you-image](https://github.com/chauhan-shobhit/claimsApp/blob/main/Screens/SignUp.jpg?raw=true)
+
+Login Page
 
 ![name-of-you-image](https://github.com/chauhan-shobhit/claimsApp/blob/main/Screens/Login.jpg?raw=true)
 
-![name-of-you-image](https://github.com/chauhan-shobhit/claimsApp/blob/main/Screens/SignUp.jpg?raw=true)
+
+Claim page
+
+![name-of-you-image](https://github.com/chauhan-shobhit/claimsApp/blob/main/Screens/Claim.jpg?raw=true)
+
+Claim Status 
+
+![name-of-you-image](https://github.com/chauhan-shobhit/claimsApp/blob/main/Screens/ClaimStatus.jpg?raw=true)
+
+
+
 
