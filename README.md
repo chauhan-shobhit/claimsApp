@@ -37,8 +37,10 @@ If a claim meet certain criteria, it can be auto-approved. This is accomplished 
 
 
 
-
-![name-of-you-image]()
+![name-of-you-image](https://github.com/chauhan-shobhit/claimsApp/blob/main/Screens/s1.png?raw=true)
+![name-of-you-image](https://github.com/chauhan-shobhit/claimsApp/blob/main/Screens/s2.png?raw=true)
+![name-of-you-image](https://github.com/chauhan-shobhit/claimsApp/blob/main/Screens/s3.jpg?raw=true)
+![name-of-you-image](https://github.com/chauhan-shobhit/claimsApp/blob/main/Screens/s4.jpg?raw=true)
 
 
 ![name-of-you-image](https://github.com/chauhan-shobhit/claimsApp/blob/main/Screens/HomePage.jpg?raw=true)
