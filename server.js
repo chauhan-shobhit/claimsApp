@@ -9,7 +9,32 @@ const user = require("./routes/api/user");
 const claim = require("./routes/api/claim");
 const policy = require("./routes/api/policy");
 
+const swaggerJsDoc = require('swagger-jsdoc')
+const swaggerUi = require('swagger-ui-express')
+
+
+
+
+const swaggerOptions = {
+  
+  swaggerDefinition: {
+  
+    info: {
+      version: "1.0.1",
+      title: "Claims Application",
+      description: "API information of Claims Application",
+      servers: "http://localhost:1221"
+    }
+  },
+  url: 'http://petstore.swagger.io/v2/swagger.json', 
+  apis: ["./routes/api/*.js"]
+};
 const app = express();
+
+const swaggerDocs = swaggerJsDoc(swaggerOptions);
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
+
+
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());

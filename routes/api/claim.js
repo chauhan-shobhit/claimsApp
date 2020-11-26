@@ -10,15 +10,37 @@ const Claim = require("../../models/Claim");
 const Engine = require("json-rules-engine").Engine;
 const claimRule = require("../../ruleengine/claimRule");
 
-// @route   GET /v1/claim/health
+
+//@route   GET /v1/claim/health
 // @desc    test claim route
 // @access  @public
 
+/**
+ * @swagger
+ * /v1/claim/health:
+ *  get:
+ *    description: test claim route
+ *    access: public
+ *    responses:
+ *      '200':
+ *        description: Claim route is fine
+ */
 router.get("/health", (req, res) => res.json({ message: "Claim is fine" }));
 
 // @route   GET /v1/claim/:ClaimId
 // @desc    Get claim details by claimID
 // @access  @public
+
+/**
+ * @swagger
+ * /v1/claim/:ClaimId:
+ *  get:
+ *    description: Get claim details by claimID
+ *    access: public
+ *    responses:
+ *      '200':
+ *        description: claim details
+ */
 
 router.get("/:claimIdInReq", async (req, res) => {
   try {
@@ -33,6 +55,17 @@ router.get("/:claimIdInReq", async (req, res) => {
 // @desc    Get claim details by claimID passed in as query param
 // @access  @public
 
+/**
+ * @swagger
+ * /v1/claim/?ClaimID=claimId:
+ *  get:
+ *    description: Get claim details by claimID passed in as query param
+ *    access: public
+ *    responses:
+ *      '200':
+ *        description: claim details
+ */
+
 router.get("/", async (req, res) => {
   console.log(req.query.ClaimID);
   try {
@@ -46,6 +79,17 @@ router.get("/", async (req, res) => {
 // @route   POST /v1/claim/create
 // @desc    Creating a new claim and running the claim through rule engine
 // @access  @public
+
+/**
+ * @swagger
+ * /v1/claim/create:
+ *  post:
+ *    description: Create a claim with provided details. if policy exists, then run through rules, else return the new claim
+ *    access: public
+ *    responses:
+ *      '200':
+ *        description: claim details
+ */
 
 router.post("/create", async (req, res) => {
   //creating a claim

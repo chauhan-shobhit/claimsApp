@@ -13,11 +13,36 @@ const User = require("../../models/User");
 // @desc    test user route
 // @access  public
 
+/**
+ * @swagger
+ * /v1/user/health:
+ *  get:
+ *    description: test user route
+ *    access: public
+ *    responses:
+ *      '200':
+ *        description: User route is fine
+ */
+
 router.get("/health", (req, res) => res.json({ msg: "User is fine" }));
 
-// @route   GET /v1/user/register
+// @route   POST /v1/user/register
 // @desc    register the user
 // @access  public
+
+/**
+ * @swagger
+ * /v1/user/register:
+ *  post:
+ *    description: Registration of a user
+ *    access: public
+ *    responses:
+ *      '200':
+ *        description: User regitration was succcessful
+ *      '400':
+ *        description: User already registered
+ */
+
 
 router.post("/register", (req, res) => {
   User.findOne({ email: req.body.email }).then((user) => {
@@ -51,6 +76,20 @@ router.post("/register", (req, res) => {
 // @route   GET /v1/user/login
 // @desc    user login
 // @access  public
+
+/**
+ * @swagger
+ * /v1/user/login:
+ *  get:
+ *    description: Authentication of user
+ *    access: public
+ *    responses:
+ *      '200':
+ *        description: User route is fine
+ *      '401':
+ *        description: Unauthenticatd. Incorrect Password
+ * 
+ */       
 
 router.post("/login", (req, res) => {
   const email = req.body.email;
